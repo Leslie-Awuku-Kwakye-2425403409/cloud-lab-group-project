@@ -1,0 +1,145 @@
+/* Global */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #a6dae7ba;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #003366, #0055aa);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd00;
+}
+
+/* Content Box */
+.content {
+    padding: 25px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Form */
+input, textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0055aa;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .content {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+.dark-mode {
+    background: #111;
+    color: white;
+}
+
+.dark-mode .content {
+    background: #222;
+    color: white;
+}
+.group-image {
+    width: 100%;
+    max-width: 600px;   /* Perfect width for laptop screens */
+    height: auto;       /* Keeps the correct proportions */
+    display: block;
+    margin: 20px auto;  /* Centers the image */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Adds a soft shadow */
+}
+.group-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+
+    animation: zoomIn 1.2s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+  form{text-align: center;}
